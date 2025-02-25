@@ -54,3 +54,7 @@ Input
 ```ruby
 mipssim -i INPUTFILENAME -o OUTPUTFILENAME
 ```
+
+* Program will produce 2 ouput files
+    * OUTPUTFILENAME_sim.txt, which contains the simulation ouput
+    * OUTPUTFILENAME_dis.txt, which contains the disassembled program code for the input MIPS program
