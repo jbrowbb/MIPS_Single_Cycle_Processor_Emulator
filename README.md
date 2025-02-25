@@ -20,8 +20,7 @@ MIPS Single Cycle Processor Emulator Project
 * JADA REWATCH VIDEOS
 
 
-Details
-==========
+# Details
 
 * Will be given an input file containing a sequence of 32 bit instruction words
 
@@ -45,8 +44,7 @@ NOP
 ```
 
 
-Input
-========
+# Input
 
 * Program must accept command line arguments for execution
 * The following arguments must be supported (Executable named "mipssim"):
@@ -60,8 +58,7 @@ mipssim -i INPUTFILENAME -o OUTPUTFILENAME
     * OUTPUTFILENAME_dis.txt, which contains the disassembled program code for the input MIPS program
 
 
-Output
-=========
+# Output
 
 * Program will produce 2 ouput files
     * OUTPUTFILENAME_sim.txt, which contains the simulation ouput
@@ -97,3 +94,12 @@ Output
     * [data address]: [tab] [show 8 data words, with tabs in between]
 
     * ... [continue until last data word]
+
+
+# What to Turn In
+1. Your source files, in ZIP or TAR format
+2. A README file in PLAIN TEXT FORMAT that containd the names and email addresses or your gorup members ad instructions for compiling and running your program.
+    * The README file should NOT have a file extention (e.g., .txt)
+
+3. A MAKEFILE that will compile your program using the default make targer (all:)
+4. README, Makefile, and the executable generated once compiled must be in the TOP LEVEL DIRECTORY once your archive is unizpped
