@@ -81,7 +81,19 @@ Output
 
     * cycle: [cycle number] [tab] [instruction address] [tab] [instruction string (same as step 4 above)]
 
-    * [blank lane]
+    * [blank line]
 
 * registers:
-    * r00: [tab] [integer value of R00] [tab] [integer value of R01] [tab] ... [integer value of R07]
+    * r00: [tab] [intger value of R00] [tab] [integer value of R01] [tab] ... [integer value of R07]
+
+    * r08: [tab] [integer value of R08] [tab] [integer value of R09] [tab] ... [integer value of R15]
+
+    * r16: [tab] [integer value of R16] [tab] [integer value of R17] [tab] ... [integer value of R23]
+
+    * r24: [tab] [integer value of R24] [tab] [integer value of R25] [tab] ... [integer value of R31]
+
+    * [blank line]
+
+    * [data address]: [tab] [show 8 data words, with tabs in between]
+
+    * ... [continue until last data word]
