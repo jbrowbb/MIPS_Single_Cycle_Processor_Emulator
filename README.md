@@ -43,3 +43,14 @@ AND, OR,
 MOVZ
 NOP
 ```
+
+
+Input
+========
+
+* Program must accept command line arguments for execution
+* The following arguments must be supported (Executable named "mipssim"):
+
+```ruby
+mipssim -i INPUTFILENAME -o OUTPUTFILENAME
+```
