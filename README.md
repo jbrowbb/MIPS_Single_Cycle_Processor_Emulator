@@ -103,3 +103,40 @@ mipssim -i INPUTFILENAME -o OUTPUTFILENAME
 
 3. A MAKEFILE that will compile your program using the default make targer (all:)
 4. README, Makefile, and the executable generated once compiled must be in the TOP LEVEL DIRECTORY once your archive is unizpped
+
+
+Example
+==========
+
+Ex_readBinaryFile.cpp
+
+```ruby
+# include <iostream>
+# include <unistd.h>
+# include <fcntl.h>
+# include <iomanip>
+using namespace std;
+
+int main() {
+    char buffer [4];
+    int i;
+    char * iPtr;
+    iPtr = (char*)(void*) &i;
+
+    int FD = open("test2.bin", O_RDONLY);
+
+    int amt = 4;
+    while(amt != 0) {
+        amt = read(FD, bffer, 4);
+        
+        if (amt == 4){
+            iPtr[0] = buffer[3];
+            iPtr[1] = buffer[2];
+            iPtr[2] = buffer[1];
+            iPtr[3] = buffer[0];
+
+            cout << "i = " << hex << i << endl;
+        }
+    }
+}
+```
