@@ -63,12 +63,25 @@ mipssim -i INPUTFILENAME -o OUTPUTFILENAME
 Output
 =========
 
-*Program will produce 2 ouput files
+* Program will produce 2 ouput files
     * OUTPUTFILENAME_sim.txt, which contains the simulation ouput
     * OUTPUTFILENAME_dis.txt, which contains the disassembled program code for the input MIPS program
 
 * The disassembled ouput file should contain one line per word in teh input file
-    * Should be separated into 4 columns, each separated by tab chracter
+    * Should be separated into 4 columns, each separated by tab character
 
 * The columns contain the following information
     1. The binary representation of the instruction word. If the word is an instruction (as opposed to memory data after the BREAK instruction), the instruction should be split into six groups of digits: the opcode bits, four groups of 5 bits, and a final group of 6 bits.
+    2. The address of the memory location (in decimal)
+    3. The disassembled instruction opcode
+    4. If it is an instruction, print the operation, followed by a tab character, then print each argument separated by a comman and a space (", ")
+
+* The simulation file must have the following format:
+    * 20 equal signs and a newline
+
+    * cycle: [cycle number] [tab] [instruction address] [tab] [instruction string (same as step 4 above)]
+
+    * [blank lane]
+
+* registers:
+    * r00: [tab] [integer value of R00] [tab] [integer value of R01] [tab] ... [integer value of R07]
