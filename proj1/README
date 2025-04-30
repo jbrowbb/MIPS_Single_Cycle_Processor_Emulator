@@ -1,0 +1,10 @@
+Name: Jada Brown
+Email: jbrowbb@siue.edu
+==========================
+
+Instructions for Compileing and Running:
+
+1. UNzip the archive
+2. Navagate to the top-level directory
+3. Inside the linux terminal go to the directory holding 'makefile' and run type 'make'
+4. Run the  simulator using ./mipssim -i INPUTFILENAME -o OUTPUTFILENAME

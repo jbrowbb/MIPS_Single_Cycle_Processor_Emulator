@@ -129,7 +129,7 @@ int main() {
     while(amt != 0) {
         amt = read(FD, buffer, 4);
         
-        if (amt == 4){
+        if(amt == 4) {
             iPtr[0] = buffer[3];
             iPtr[1] = buffer[2];
             iPtr[2] = buffer[1];
